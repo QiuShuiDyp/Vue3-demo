@@ -1,27 +1,30 @@
 <template>
   <div>
     <h1>这是首页</h1>
+    <Button @click="outClick" />
     <!-- <TodoList /> -->
     <!-- <span>监听坐标({{ x }},{{ y }})</span> -->
     <h1 @click="add">{{ count }}</h1>
   </div>
 </template>
 <script setup>
-import { ref } from "vue";
-// import TodoList from "../components/TodoList.vue";
-// import { useMouse } from "../utils/mouse";
+import { ref, onMounted } from "vue";
+import Button from "../components/Button.vue";
 let count = ref(1);
 let color = ref("red");
-// let { x, y } = useMouse();
-
+onMounted(() => {
+  // console.log(this.moment(new Date()).format("YYYY-MM-DD"));
+});
 function add() {
   count.value++;
   color.value = Math.random() > 0.5 ? "blue" : "red";
 }
+function outClick() {
+  alert("this is outer");
+}
 </script>
 <style scoped>
 h1 {
-  /* color: red; */
   color: v-bind(color);
 }
 </style>
