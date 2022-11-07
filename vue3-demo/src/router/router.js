@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from "vue-router";
 const SetUp = import("../pages/SetUp.vue");
 const VueTemplate = import("../pages/VueTemplate.vue");
 const Reactivity = import("../pages/VueReactivity.vue");
+const VueWatch = import("../pages/VueWatch.vue");
 // 配置路由规则
 const routes = [
   {
@@ -15,6 +16,10 @@ const routes = [
   {
     path: "/vue-reactive",
     component: Reactivity,
+  },
+  {
+    path: "/vue-watch",
+    component: VueWatch,
   },
 ];
 

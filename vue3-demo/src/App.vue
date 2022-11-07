@@ -8,6 +8,7 @@
         <li><router-link to="/setup">Setup()</router-link></li>
         <li><router-link to="/vue-template">模板语法</router-link></li>
         <li><router-link to="/vue-reactive">响应式基础</router-link></li>
+        <li><router-link to="/vue-watch">计算属性和侦听器</router-link></li>
         <!-- <li><router-link to="/setup/script_setup">script setup</router-link></li> -->
       </ul>
     </div>
