@@ -1,8 +1,11 @@
-import { createRouter, createWebHashHistory } from "vue-router";
-const SetUp = import("../pages/SetUp.vue");
-const VueTemplate = import("../pages/VueTemplate.vue");
-const Reactivity = import("../pages/VueReactivity.vue");
-const VueWatch = import("../pages/VueWatch.vue");
+import { createRouter, createWebHashHistory } from "vue-router"
+const SetUp = import("../pages/SetUp.vue")
+const VueTemplate = import("../pages/VueTemplate.vue")
+const Reactivity = import("../pages/VueReactivity.vue")
+const VueWatch = import("../pages/VueWatch.vue")
+const VueStyle = import("../pages/VueStyle.vue")
+const VueLifeCycle = import("../pages/VueLifeCycle")
+const VueComponents = import("../pages/VueComponents.vue")
 // 配置路由规则
 const routes = [
   {
@@ -21,13 +24,25 @@ const routes = [
     path: "/vue-watch",
     component: VueWatch,
   },
-];
+  {
+    path: "/vue-style",
+    component: VueStyle,
+  },
+  {
+    path: "/vue-life-cycle",
+    component: VueLifeCycle,
+  },
+  {
+    path: "/vue-components",
+    component: VueComponents,
+  },
+]
 
 // 创建路由实例
 const router = createRouter({
   // 采用hash模式创建路由，注意这里是创建一个实例
   history: createWebHashHistory(),
   routes,
-});
+})
 
-export default router;
+export default router
