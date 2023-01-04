@@ -6,6 +6,8 @@ const VueWatch = import("../pages/VueWatch.vue")
 const VueStyle = import("../pages/VueStyle.vue")
 const VueLifeCycle = import("../pages/VueLifeCycle")
 const VueComponents = import("../pages/VueComponents.vue")
+const VueSlots = import("../pages/VueSlots.vue")
+const VueProvide = import("../pages/VueProvide.vue")
 // 配置路由规则
 const routes = [
   {
@@ -35,6 +37,14 @@ const routes = [
   {
     path: "/vue-components",
     component: VueComponents,
+  },
+  {
+    path: "/vue-slots",
+    component: VueSlots,
+  },
+  {
+    path: "/vue-provide",
+    component: VueProvide,
   },
 ]
 

@@ -16,6 +16,12 @@
         <li>
           <router-link to="/vue-components">组件</router-link>
         </li>
+        <li>
+          <router-link to="/vue-slots">插槽</router-link>
+        </li>
+        <li>
+          <router-link to="/vue-provide">依赖注入</router-link>
+        </li>
         <!-- <li><router-link to="/setup/script_setup">script setup</router-link></li> -->
       </ul>
     </div>

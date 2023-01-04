@@ -1,6 +1,11 @@
 <template>
   <div>
-    <my-input placeholder="这是我的input组件" @change="onChange"></my-input>
+    <my-input
+      placeholder="这是我的input组件"
+      @change="onChange"
+      class="input"
+      id="my-input"
+    />
   </div>
 </template>
 
@@ -12,4 +17,7 @@ function onChange(value) {
 </script>
 
 <style lang="scss" scoped>
+.input {
+  color: black;
+}
 </style>
